@@ -1,39 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import registerServiceWorker from './registerServiceWorker';
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
-import axios from "axios";
 
-// Our Components
+import { Route, BrowserRouter as Router } from 'react-router-dom';
+
+//this page will be for all the routing for the site.
+//you need to import the page from where its nested before you can route it
+
+
+
+//import pages here
 import Home from './pages/Home';
+import Contact from './pages/Contact';
+import GraphicArt from './pages/GraphicArt';
+import WebDevelopment from './pages/WebDevelopment';
 import Resume from './pages/Resume';
 
-
-// Here is if we have an id_token in localStorage
-if(localStorage.getItem("id_token")) {
-  // then we will attach it to the headers of each request from react application via axios
-  axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('id_token')}`;
-}
 
 ReactDOM.render(
     <Router>
         <div>
-            {/* <Route path="*" component={Navbar} />
-            <Switch> */}
             <Route exact path="/" component={Home} />
-            <Route exact path="/resume" component={Resume} />
-            {/* <Route exact path="/login" component={Login} />
-            <Route exact path="/signup" component={Signup} />
-            <Route exact path="/profile" component={Profile} />
-            <Route exact path="/templateone" component={TemplateOne} />
-            <Route exact path="/templatetwo" component={TemplateTwo} />
-            <Route exact path="/templatethree" component={TemplateThree} />
-            <Route exact path="/thankyou" component={ThankU} /> */}
-            {/* </Switch> */}
+            <Route exact path="/WebDevelopment" component={WebDevelopment} />
+            <Route exact path="/GraphicArt" component={GraphicArt} />
+            <Route exact path="/Resume" component={Resume} />
+            <Route exact path="/Contact" component={Contact} />
         </div>
     </Router>
-    , document.getElementById('root')
-);
-registerServiceWorker();
+    , document.getElementById('root'));
+
+serviceWorker.unregister();

@@ -1,11 +1,10 @@
 import React from 'react';
-
-/* Add in Logo here and slides down to about section. */
+import Navbar from '../components/navBar/navBar';
 
 function Resume() {
     return (
         <div>
-            
+            <Navbar />
         </div>
     )
 }

@@ -1,0 +1,30 @@
+
+/* Navbar Styles */
+
+.navStyle {
+    background: rgb(255,165,0);
+}
+
+/* Home Page Styles */
+
+.homeTitle {
+    font-family: 'Poiret One', cursive;
+}
+.titleOne {
+    margin-top: 20%;
+}
+.homeBlipOne {
+    font-family: 'Anonymous Pro', monospace;
+
+}
+
+
+
+/* VISUAL HTML Styles */
+
+.htmlCode {
+    background: darkgray;
+    height: 100%;
+    font-family: 'Anonymous Pro', monospace;
+    color: white;
+}
