@@ -25,39 +25,25 @@ const Example = (props) => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            {/* <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem> */}
-            {/* <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Visual HTML</NavLink>
-            </NavItem> */}
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Projects
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <NavLink href="/BubbleSort">Web Development</NavLink>
+                  <NavLink href="/WebDevelopment">Web Development</NavLink>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  <NavLink href="/QuickSort">Graphic Art</NavLink>
+                  <NavLink href="/GraphicArt">Graphic Art</NavLink>
                 </DropdownItem>
-                {/* <DropdownItem divider />
-                <DropdownItem>
-                  <NavLink href="/LinearSearch">Linear Search</NavLink>
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  <NavLink href="/BinarySearch">Binary Search</NavLink>
-                </DropdownItem> */}
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>
-              <NavLink href="/VisualHTML">Resume</NavLink>
+              <NavLink href="/Resume">Resume</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/VisualHTML">Contact</NavLink>
+              <NavLink href="/Contact">Contact</NavLink>
             </NavItem>
           </Nav>
 
