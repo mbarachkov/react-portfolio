@@ -7,8 +7,8 @@
 
 /* Home Page Styles */
 
-.homeTitle {
-    font-family: 'Poiret One', cursive;
+.homeHero {
+    background: linear-gradient(#000, #000) no-repeat center/2px 100%;
 }
 .titleOne {
     margin-top: 20%;
