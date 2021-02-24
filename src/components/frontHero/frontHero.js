@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import codeB1 from './codeButton.png';
+import artB1 from './artButton.png';
 import "../../styles/style.css";
 
 class frontHero extends Component {
@@ -7,12 +9,12 @@ class frontHero extends Component {
       <section>
         <div classNmae="container">
           <div className="row homeHero">
-            <div className="mx-auto homeTitle">
-              <img src="https://via.placeholder.com/600"></img>
+            <div className="mx-auto artButton">
+              <img src={artB1} alt="Art Button" className="col-lg-12 col-md-6 col-sm-6"></img>
             </div>
 
-            <div className="mx-auto homeBlipOne">
-              <img src="https://via.placeholder.com/600"></img>
+            <div className="mx-auto codeButton">
+              <img src={codeB1} alt='Code Button' className='col-lg-12 col-md-6 col-sm-6'></img>
             </div>
           </div>
         </div>
